@@ -1,7 +1,7 @@
+import { Grid } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { Box, Grid } from "@mui/material";
-import MediaCard from "./shopCard";
 import Heading from "../Heading";
+import MediaCard from "./shopCard";
 
 export default function Store() {
   const [storeItems, setStoreItems] = useState();

@@ -1,5 +1,5 @@
+import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
-import { Grid, Typography, Box, Button } from "@mui/material";
 import bgImage from "../../assets/shirt.webp";
 
 export default function Header() {

@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import GoogleIcon from "@mui/icons-material/Google";
+import { Divider, IconButton, TextField } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import Checkbox from "@mui/material/Checkbox";
 import CssBaseline from "@mui/material/CssBaseline";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Divider, IconButton, TextField } from "@mui/material";
-import { useAuth } from "../Context/firebaseContext";
+import Typography from "@mui/material/Typography";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import GoogleIcon from "@mui/icons-material/Google";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import { useAuth } from "../Context/firebaseContext";
 
 function Copyright(props) {
   return (
@@ -65,7 +65,6 @@ export default function LoginForm() {
         <Box
           sx={{
             margin: "auto",
-            marginTop: 8,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -85,7 +84,7 @@ export default function LoginForm() {
           >
             Create your accout
           </Typography>
-          <Typography
+          {/* <Typography
             sx={{
               mt: 1,
               mb: 1,
@@ -96,7 +95,7 @@ export default function LoginForm() {
           >
             <span style={{ color: "gray" }}>Or</span> start your 14-day for free
             trial
-          </Typography>
+          </Typography> */}
           <Box
             component="form"
             noValidate

@@ -1,4 +1,4 @@
-import { Divider, Typography, Box } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 
 const Heading = ({ title, sx }) => (

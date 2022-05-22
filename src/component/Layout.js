@@ -1,8 +1,7 @@
-import ResponsiveAppBar from './AppBar';
 import React from 'react';
 import AppRoutes from '../routes/index';
-import Footer from './Footer';
 import MobileDrawar from './Drawer';
+import Footer from './Footer';
 
 export default function Layout({children}) {
   return (

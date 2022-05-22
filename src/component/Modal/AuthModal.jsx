@@ -1,8 +1,6 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import * as React from 'react';
 import LoginForm from '../SignUp';
 
 const style = {
@@ -14,6 +12,7 @@ const style = {
   bgcolor: '#9cb5cda6',
   boxShadow: 24,
   p: 4,
+  borderRadius:'20px'
 };
 
 export default function BasicModal({openLoginModal , handleCloseLogin, handleOpenLogin }) {

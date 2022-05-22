@@ -1,10 +1,9 @@
-import {
-  CardGiftcardOutlined,
-  SupervisedUserCircleOutlined,
-} from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
+import PersonIcon from "@mui/icons-material/Person";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AppBar from "@mui/material/AppBar";
 import Avatar from "@mui/material/Avatar";
+import Badge from "@mui/material/Badge";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
@@ -15,16 +14,13 @@ import Toolbar from "@mui/material/Toolbar";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/firebaseContext";
 import BasicModal from "./Modal/AuthModal";
-import Badge from "@mui/material/Badge";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import PersonIcon from "@mui/icons-material/Person";
-import { useSelector } from "react-redux";
 
 const pages = [
-  { id: 1, name: "Home", link: "/home" },
+  { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Product", link: "/product" },
   { id: 3, name: "Cart", link: "/cart" },
 ];
