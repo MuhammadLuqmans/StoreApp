@@ -24,12 +24,12 @@ const pages = [
   { id: 2, name: "Product", link: "/product" },
   { id: 3, name: "Cart", link: "/cart" },
 ];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+// const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = ({ handleDrawerOpen }) => {
   const navigate = useNavigate();
   const { currentUser } = useAuth();
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  // const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const [openLoginModal, setOpenLoginModal] = React.useState(false);
@@ -38,16 +38,17 @@ const ResponsiveAppBar = ({ handleDrawerOpen }) => {
 
   const { logout } = useAuth();
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  //   console.log(anchorElNav)
+  // };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
