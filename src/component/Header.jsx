@@ -1,8 +1,9 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
-import bgImage from "../../assets/shirt.webp";
+// import bgImage from "./assets/shirt.webp";
+import bgImage from './../assets/shirt.webp'
 
-export default function Header() {
+export default function Header({ title, Content, btnTitle }) {
   return (
     <Box
       sx={{
@@ -26,8 +27,8 @@ export default function Header() {
               fontSize: { xs: 42, md: 60 },
               textTransform: "capitalize",
             }}
-          >
-            Brand Regent Mall
+          >{title}
+            
           </Typography>
           <Typography
             sx={{
@@ -37,12 +38,10 @@ export default function Header() {
               textTransform: "normal",
               mt:2
             }}
-          >
-            There’s a saying that if you’re not online, you don't exist. A
-            saying that grows more relevant each day as the online marketplace
-            continues to dominate the shopping world.
+          >{ Content }
+            
           </Typography>
-          <Button variant="contained" sx={{ maxWidth:200, width:'100%',fontWeight:'bold',py:1.4, fontSize:18,mt:3 }}>Shop Now</Button>
+          <Button variant="contained" sx={{ maxWidth:200, width:'100%',fontWeight:'bold',py:1.4, fontSize:18,mt:3 }}>{btnTitle}</Button>
         </Grid>
 
         <Grid item xs={12} sm={12} md={6}>

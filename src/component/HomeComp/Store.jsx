@@ -14,6 +14,13 @@ export default function Store() {
           console.log(json);
           setStoreItems(json);
         });
+
+      // fetch('https://api.storerestapi.com/products')
+      // .then(response => response.json())
+      // .then(json => {
+      //   console.log(json);
+      //   setStoreItems(json.data);
+      // });
     };
     getStoreData();
   }, []);

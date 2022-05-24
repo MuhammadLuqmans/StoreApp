@@ -15,7 +15,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../Context/firebaseContext";
 import BasicModal from "./Modal/AuthModal";
 
@@ -23,6 +23,7 @@ const pages = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Product", link: "/product" },
   { id: 3, name: "Cart", link: "/cart" },
+  // { id: 3, name: "", link: "/cart" },
 ];
 // const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -192,9 +193,15 @@ const ResponsiveAppBar = ({ handleDrawerOpen }) => {
               </Menu>
             </Box>
           )}
-          <Badge badgeContent={items.length} color="warning" sx={{ ml: 2 }}>
+          <Link to='/cart' style={{ textDecoration:'none' }}>
+          <Badge badgeContent={items.length} color="warning" sx={{ ml: 2, color:'#fff', fontWeight:'bold','& svg':{
+            fill:'#fff',
+            width:35,
+            height:35
+          } }}>
             <ShoppingCartIcon />
           </Badge>
+          </Link>
         </Toolbar>
       </Container>
     </AppBar>

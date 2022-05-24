@@ -6,16 +6,22 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { add } from '../../redux/slice';
 
 export default function MediaCard({product}) {
     const dispatch =  useDispatch();
 
+
     const handleAdd = (product) => {
-        dispatch(add(product));
+      console.log("product ", product);
+
+      dispatch(add(product));
+        
     };
 
   return (
+    // <Link to={`/product/${product.id}`} style={{ textDecoration:'none' }} >
     <Card sx={{ maxWidth: 345, boxShadow:23, borderRadius:'12px' }}>
       <Box
         component="img"
@@ -33,10 +39,10 @@ export default function MediaCard({product}) {
       </CardContent>
       <CardActions sx={{ bgcolor:'#fff !important', zIndex:2, position:'relative' }}>
         <Button size="small" sx={{ textDecoration:'none' }}>Buy now</Button>
-        <Button size="small" onClick={handleAdd} sx={{ textDecoration:'none' }}>Add TO Cart</Button>
+        <Button size="small" onClick={()=>handleAdd(product)} sx={{ textDecoration:'none' }}>Add TO Cart</Button>
       </CardActions>
     </Card>
-    
+    // </Link>
   );
 }
 

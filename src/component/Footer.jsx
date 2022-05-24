@@ -6,7 +6,7 @@ export default function Footer() {
     <div>
       <Box sx={{ backgroundColor: "#1976d2", p: 3, mt: 5, textAlign:'center' }}>
       <Grid item container sx={{ justifyContent:'center' }}>
-      <Grid xs={12} sm={8} md={6} sx={{  }}>
+      <Grid item xs={12} sm={8} md={6} sx={{  }}>
         <Typography sx={{ fontSize:{xs:36,sm:52}, fontWeight:'bold', color:'#fff', fontFamily:'Roboto, sans-serif' }}>Footer</Typography>
         <Typography sx={{ fontSize:16, color:'#fff' }}>
           100% Polyester, Machine wash, 100% cationic polyester interlock,
